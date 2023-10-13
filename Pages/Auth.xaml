@@ -1,0 +1,91 @@
+﻿<Page x:Class="SportShop.Pages.Auth"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:SportShop.Pages"
+      mc:Ignorable="d" 
+      d:DesignHeight="650" d:DesignWidth="1000"
+      Title="Авторизация">
+
+    <Grid>
+        <Border Background="#ffffff"
+                BorderThickness="2"
+                CornerRadius="15    "
+                Padding="20"
+                Width="350"
+                HorizontalAlignment="Center"
+                VerticalAlignment="Center">
+            <StackPanel>
+                <StackPanel>
+                    <TextBlock Text="Логин: ">
+                    </TextBlock>
+
+                    <Border BorderThickness="2"
+                            CornerRadius="3"
+                            BorderBrush="#9933CC">
+                        <TextBox Name="txbLogin"
+                                 Background="Transparent"
+                                 BorderThickness="0">
+                        </TextBox>
+                    </Border>
+                </StackPanel>
+
+                <StackPanel Margin="0 25">
+                    <TextBlock Text="Пароль: ">
+                    </TextBlock>
+
+                    <Border BorderThickness="2"
+                            CornerRadius="3"
+                            BorderBrush="#9933CC">
+                        <PasswordBox Name="psbPassword"
+                                 Background="Transparent"
+                                 BorderThickness="0">
+                        </PasswordBox>
+                    </Border>
+                </StackPanel>
+
+                <Border BorderThickness="0"
+                        HorizontalAlignment="Center"
+                        CornerRadius="3"
+                        
+                        BorderBrush="#78FECF">
+
+                    <Button Template="{DynamicResource myButton}" 
+                            Name="btnIn"
+                            Click="btnIn_Click"
+                            Content="Вход"
+                            BorderThickness="0"
+                            Padding="80 3"
+                            Foreground="#ffffff"
+                            Background="Transparent">
+                    </Button>
+
+                    <Border.Effect>
+                        <DropShadowEffect Color="#333333"
+                                  ShadowDepth="2"
+                                  Opacity="0.25"
+                                  BlurRadius="3">
+                        </DropShadowEffect>
+                    </Border.Effect>
+
+                    <Border.Background>
+                        <LinearGradientBrush StartPoint="0, 0" EndPoint="1, 1">
+                            <GradientStop Color="#78FECF" Offset="0.3"></GradientStop>
+                            <GradientStop Color="#9933CC" Offset="0.9"></GradientStop>
+                        </LinearGradientBrush>
+                    </Border.Background>
+                </Border>
+                
+            </StackPanel>
+
+            <Border.Effect>
+                <DropShadowEffect Color="#9933CC"
+                                  ShadowDepth="5"
+                                  Opacity="0.15"
+                                  BlurRadius="10">
+                </DropShadowEffect>
+            </Border.Effect>
+        </Border>
+    </Grid>
+</Page>
