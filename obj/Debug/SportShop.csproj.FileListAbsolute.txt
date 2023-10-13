@@ -17,3 +17,5 @@ D:\4course\Diploms\Мой\SportShop\obj\Debug\SportShop.exe
 D:\4course\Diploms\Мой\SportShop\obj\Debug\SportShop.pdb
 D:\4course\Diploms\Мой\SportShop\obj\Debug\Pages\Auth.g.cs
 D:\4course\Diploms\Мой\SportShop\obj\Debug\Pages\Auth.baml
+D:\4course\Diploms\Мой\SportShop\obj\Debug\SellerPages\MenuSeller.g.cs
+D:\4course\Diploms\Мой\SportShop\obj\Debug\SellerPages\MenuSeller.baml
