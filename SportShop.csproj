@@ -55,6 +55,9 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="AdminPages\EmptyPageAdmin.xaml.cs">
+      <DependentUpon>EmptyPageAdmin.xaml</DependentUpon>
+    </Compile>
     <Compile Include="AdminPages\MenuAdmin.xaml.cs">
       <DependentUpon>MenuAdmin.xaml</DependentUpon>
     </Compile>
@@ -67,6 +70,10 @@
     <Compile Include="SellerPages\MenuSeller.xaml.cs">
       <DependentUpon>MenuSeller.xaml</DependentUpon>
     </Compile>
+    <Page Include="AdminPages\EmptyPageAdmin.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="AdminPages\MenuAdmin.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -138,6 +145,13 @@
   </ItemGroup>
   <ItemGroup>
     <Resource Include="Images\exit.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\Seller.png" />
+    <Resource Include="Images\Delivery.png" />
+    <Resource Include="Images\Categories.png" />
+    <Resource Include="Images\Products.png" />
+    <Resource Include="Images\Provider.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

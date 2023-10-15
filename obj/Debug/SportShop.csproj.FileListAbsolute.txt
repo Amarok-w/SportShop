@@ -25,3 +25,5 @@ D:\4course\Diploms\Мой\SportShop\obj\Debug\ModalWindows\ExitModal.g.cs
 D:\4course\Diploms\Мой\SportShop\obj\Debug\ModalWindows\ExitModal.baml
 D:\4course\Diploms\Мой\SportShop\obj\Debug\AdminPages\MenuAdmin.g.cs
 D:\4course\Diploms\Мой\SportShop\obj\Debug\AdminPages\MenuAdmin.baml
+D:\4course\Diploms\Мой\SportShop\obj\Debug\AdminPages\EmptyPageAdmin.g.cs
+D:\4course\Diploms\Мой\SportShop\obj\Debug\AdminPages\EmptyPageAdmin.baml

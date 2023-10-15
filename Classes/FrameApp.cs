@@ -11,5 +11,6 @@ namespace SportShop.Classes
     {
         public static Frame frame = new Frame();
         public static Frame sellerFrame = new Frame();
+        public static Frame AdminFrame = new Frame();
     }
 }

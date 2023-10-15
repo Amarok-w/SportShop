@@ -12,6 +12,8 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using SportShop.Classes;
+using SportShop.ModalWindows;
 
 namespace SportShop.AdminPages
 {
@@ -23,6 +25,40 @@ namespace SportShop.AdminPages
         public MenuAdmin()
         {
             InitializeComponent();
+            FrameApp.AdminFrame = frmAdmin;
+
+            frmAdmin.Navigate(new EmptyPageAdmin());
+        }
+
+        private void btnExit_Click(object sender, RoutedEventArgs e)
+        {
+            ExitModal modal = new ExitModal();
+            modal.ShowDialog();
+        }
+
+        private void btnCategories_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void btnProducts_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void btnProviders_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void btnDelivery_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void btnSellers_Click(object sender, RoutedEventArgs e)
+        {
+
         }
     }
 }

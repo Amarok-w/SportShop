@@ -9,43 +9,212 @@
       Title="Меню">
 
     <Grid>
-        <Grid HorizontalAlignment="Left"
+
+        <Grid Grid.Column="0"
               Name="navPanel"
-              Background="pink"
-              Width="50">
-            <ToggleButton Name="btnToggle"
-                          VerticalAlignment="Top"
-                          Height="30"
-                          Width="30">
+              Width="50"
+              HorizontalAlignment="Left"
+              Background="#FFFFFF"
+              >
+            <Grid.RowDefinitions>
+                <RowDefinition Height="50"></RowDefinition>
+                <RowDefinition Height="50"></RowDefinition>
+                <RowDefinition Height="50"></RowDefinition>
+                <RowDefinition Height="50"></RowDefinition>
+                <RowDefinition Height="50"></RowDefinition>
+                <RowDefinition Height="50"></RowDefinition>
+                <RowDefinition></RowDefinition>
+                <RowDefinition Height="50"></RowDefinition>
+            </Grid.RowDefinitions>
 
-                <ToggleButton.Triggers>
-                    <EventTrigger RoutedEvent="ToggleButton.Unchecked">
-                        <BeginStoryboard>
-                            <Storyboard Name="hidePanel">
-                                <DoubleAnimation Storyboard.TargetName="navPanel"
+            <StackPanel Orientation="Horizontal">
+                <Border>
+                    <ToggleButton Style="{DynamicResource MyToggleButtonStyle}" Name="btnToggle"
+                              HorizontalAlignment="Left"
+                              BorderThickness="0"
+                              Height="40"
+                              Width="40"
+                              Background="Transparent"
+                              Margin="5 0 45 0">
+                        <Grid Height="40">
+
+                            <Grid.RowDefinitions>
+                                <RowDefinition></RowDefinition>
+                                <RowDefinition></RowDefinition>
+                                <RowDefinition></RowDefinition>
+                            </Grid.RowDefinitions>
+
+                            <StackPanel Height="2"
+                                    Width="40"
+                                    Background="#333333">
+                            </StackPanel>
+
+                            <StackPanel Height="2"
+                                    Width="40"
+                                    Grid.Row="1"
+                                    Background="#333333">
+                            </StackPanel>
+
+                            <StackPanel Height="2"
+                                    Width="40"
+                                    Grid.Row="2"
+                                    Background="#333333">
+                            </StackPanel>
+                        </Grid>
+
+                        <ToggleButton.Triggers>
+                            <EventTrigger RoutedEvent="ToggleButton.Unchecked">
+                                <BeginStoryboard>
+                                    <Storyboard Name="hidePanel">
+                                        <DoubleAnimation Storyboard.TargetName="navPanel"
                                                  Storyboard.TargetProperty="Width"
-                                                 Duration="0:0:0.3"
-                                                 From="250" To="50">
-                                    
-                                </DoubleAnimation>
-                            </Storyboard>
-                        </BeginStoryboard>
-                    </EventTrigger>
+                                                 Duration="0:0:0.2"
+                                                 From="220" To="50">
 
-                    <EventTrigger RoutedEvent="ToggleButton.Checked">
-                        <BeginStoryboard>
-                            <Storyboard Name="showPanel">
-                                <DoubleAnimation Storyboard.TargetName="navPanel"
+                                        </DoubleAnimation>
+                                    </Storyboard>
+                                </BeginStoryboard>
+                            </EventTrigger>
+
+                            <EventTrigger RoutedEvent="ToggleButton.Checked">
+                                <BeginStoryboard>
+                                    <Storyboard Name="showPanel">
+                                        <DoubleAnimation Storyboard.TargetName="navPanel"
                                                  Storyboard.TargetProperty="Width"
-                                                 Duration="0:0:0.3"
-                                                 From="50" To="250">
+                                                 Duration="0:0:0.2"
+                                                 From="50" To="220">
 
-                                </DoubleAnimation>
-                            </Storyboard>
-                        </BeginStoryboard>
-                    </EventTrigger>
-                </ToggleButton.Triggers>
-            </ToggleButton>
+                                        </DoubleAnimation>
+                                    </Storyboard>
+                                </BeginStoryboard>
+                            </EventTrigger>
+                        </ToggleButton.Triggers>
+                    </ToggleButton>
+                </Border>
+
+                <TextBlock Text="Меню"
+                           VerticalAlignment="Center">
+                </TextBlock>
+            </StackPanel>
+
+            <Button Grid.Row="1"
+                    Width="220"
+                    Name="btnCategories"
+                    Click="btnCategories_Click"
+                    HorizontalAlignment="Left"
+                    BorderThickness="0"
+                    Template="{DynamicResource myButton}">
+                <StackPanel Orientation="Horizontal"
+                            Margin="0 0 15 0"
+                            VerticalAlignment="Center"
+                            HorizontalAlignment="Left" >
+                    <Image Source="../Images/Categories.png"
+                           Width="40"/>
+                    <TextBlock Text="Категории"
+                           Margin="24 0"
+                           VerticalAlignment="Center"/>
+                </StackPanel>
+            </Button>
+
+            <Button Grid.Row="2"
+                    Width="220"
+                    Name="btnProducts"
+                    Click="btnProducts_Click"
+                    HorizontalAlignment="Left"
+                    BorderThickness="0"
+                    Template="{DynamicResource myButton}">
+                <StackPanel Orientation="Horizontal"
+                            Margin="0 0 45 0"
+                            VerticalAlignment="Center"
+                            HorizontalAlignment="Left" >
+                    <Image Source="../Images/Products.png"
+                           Width="40"/>
+                    <TextBlock Text="Товары"
+                           Margin="24 0"
+                           VerticalAlignment="Center"/>
+                </StackPanel>
+            </Button>
+
+            <Button Grid.Row="3"
+                    Width="220"
+                    Name="btnProviders"
+                    Click="btnProviders_Click"
+                    HorizontalAlignment="Left"
+                    BorderThickness="0"
+                    Template="{DynamicResource myButton}">
+                <StackPanel Orientation="Horizontal"
+                            Margin="0 0 15 0"
+                            VerticalAlignment="Center"
+                            HorizontalAlignment="Left" >
+                    <Image Source="../Images/Provider.png"
+                           Width="40"/>
+                    <TextBlock Text="Поставщики"
+                           Margin="24 0"
+                           VerticalAlignment="Center"/>
+                </StackPanel>
+            </Button>
+
+            <Button Grid.Row="4"
+                    Width="220"
+                    Name="btnDelivery"
+                    Click="btnDelivery_Click"
+                    HorizontalAlignment="Left"
+                    BorderThickness="0"
+                    Template="{DynamicResource myButton}">
+                <StackPanel Orientation="Horizontal"
+                            Margin="0 0 25 0"
+                            VerticalAlignment="Center"
+                            HorizontalAlignment="Left" >
+                    <Image Source="../Images/Delivery.png"
+                           Width="40"/>
+                    <TextBlock Text="Поставки"
+                           Margin="24 0"
+                           VerticalAlignment="Center"/>
+                </StackPanel>
+            </Button>
+
+            <Button Grid.Row="5"
+                    Width="220"
+                    Name="btnSellers"
+                    Click="btnSellers_Click"
+                    HorizontalAlignment="Left"
+                    BorderThickness="0"
+                    Template="{DynamicResource myButton}">
+                <StackPanel Orientation="Horizontal"
+                            Margin="0 0 15 0"
+                            VerticalAlignment="Center"
+                            HorizontalAlignment="Left" >
+                    <Image Source="../Images/Seller.png"
+                           Width="40"/>
+                    <TextBlock Text="Продавцы"
+                           Margin="24 0"
+                           VerticalAlignment="Center"/>
+                </StackPanel>
+            </Button>
+
+            <Button Grid.Row="7"
+                    Name="btnExit"
+                    Click="btnExit_Click"
+                    Width="220"
+                    HorizontalAlignment="Left"
+                    BorderThickness="0"
+                    Template="{DynamicResource myButton}">
+                <StackPanel Orientation="Horizontal"
+                            Margin="0 0 50 0"
+                            VerticalAlignment="Center"
+                            HorizontalAlignment="Left" >
+                    <Image Source="../Images/Exit.png"
+                           Width="40"/>
+                    <TextBlock Text="Выход"
+                           Margin="24 0"
+                           VerticalAlignment="Center"/>
+                </StackPanel>
+            </Button>
         </Grid>
+
+        <Frame Name="frmAdmin" 
+               NavigationUIVisibility="Hidden"
+               Margin="50 0 0 0">
+        </Frame>
     </Grid>
 </Page>

@@ -30,8 +30,13 @@ namespace SportShop.Pages
             string login = txbLogin.Text;
             string password = psbPassword.Password;
 
-            NavigationService.Navigate(new SellerPages.MenuSeller());
-            //NavigationService.Navigate(new AdminPages.MenuAdmin());
+            if (login == "sel")
+            {
+                NavigationService.Navigate(new SellerPages.MenuSeller());
+                return;
+            }
+            NavigationService.Navigate(new AdminPages.MenuAdmin());
+
         }
     }
 }
