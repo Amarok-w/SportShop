@@ -7,13 +7,10 @@
       mc:Ignorable="d" 
       d:DesignHeight="650" d:DesignWidth="1000"
       Title="Меню">
-    <Page.Resources>
-        <SolidColorBrush x:Key="Button.MouseOver.Background" Color="green"/>
-    </Page.Resources>
     <Grid>
 
         <Grid.RowDefinitions>
-            <RowDefinition Height="45"></RowDefinition>
+            <RowDefinition Height="40"></RowDefinition>
             <RowDefinition></RowDefinition>
         </Grid.RowDefinitions>
 
@@ -23,6 +20,7 @@
                 <ColumnDefinition Width="250"></ColumnDefinition>
                 <ColumnDefinition></ColumnDefinition>
                 <ColumnDefinition Width="100"></ColumnDefinition>
+                <ColumnDefinition Width="40"></ColumnDefinition>
                 <ColumnDefinition Width="50"></ColumnDefinition>
             </Grid.ColumnDefinitions>
 
@@ -34,7 +32,35 @@
                         BorderThickness="0">
                 </Button>
             </Border>
-            
+
+            <Border BorderThickness="0 0 1 0"
+                    Grid.Column="1"
+                    BorderBrush="#ffffff">
+                <Button Name="btnProducts"
+                        Template="{DynamicResource myButton}"
+                        Content="Товары"
+                        BorderThickness="0">
+                </Button>
+            </Border>
+
+            <Button Name="btnCart"
+                    Template="{DynamicResource myButton}"
+                    BorderThickness="0"
+                    Grid.Column="3">
+                <Image Source="../Images/cart.png"
+                       Height="35">
+                </Image>
+            </Button>
+
+            <Button Name="btnExit"
+                    Click="btnExit_Click"
+                    Template="{DynamicResource myButton}"
+                    BorderThickness="0"
+                    Grid.Column="5">
+                <Image Source="../Images/exit.png"
+                       Height="30">
+                </Image>
+            </Button>
         </Grid>
 
         <Frame Grid.Row="1" Name="frmSeller" NavigationUIVisibility="Hidden"></Frame>

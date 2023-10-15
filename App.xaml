@@ -15,25 +15,19 @@
             <Setter Property="Padding" Value="2"></Setter>
         </Style>
 
-        <Style TargetType="Button">
-            <Setter Property="Background" Value="Transparent"></Setter>
-            <Setter Property="FontFamily" Value="Bahnschrift"></Setter>
-            <Setter Property="FontSize" Value="24"></Setter>
-            <Setter Property="Padding" Value="2"></Setter>
-
-            <Style.Triggers>
-                <Trigger Property="IsMouseOver" Value="True">
-                    <Setter Property="BorderThickness" Value="2"></Setter>
-                </Trigger>
-            </Style.Triggers>
-        </Style>
-
         <Style TargetType="PasswordBox">
             <Setter Property="FontFamily" Value="Bahnschrift"></Setter>
             <Setter Property="FontSize" Value="24"></Setter>
             <Setter Property="Padding" Value="2"></Setter>
         </Style>
-        
+
+        <Style TargetType="Button">
+            <Setter Property="Background" Value="Transparent"></Setter>
+            <Setter Property="FontFamily" Value="Bahnschrift"></Setter>
+            <Setter Property="FontSize" Value="24"></Setter>
+            <Setter Property="Padding" Value="2"></Setter>
+        </Style>
+
         <SolidColorBrush x:Key="Button.MouseOver.Background" Color="#22000000"/>
         <SolidColorBrush x:Key="Button.MouseOver.Border" Color="#000000"/>
         <SolidColorBrush x:Key="Button.Pressed.Background" Color="#33000000"/>

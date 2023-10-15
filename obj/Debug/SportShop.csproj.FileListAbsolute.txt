@@ -19,3 +19,9 @@ D:\4course\Diploms\Мой\SportShop\obj\Debug\Pages\Auth.g.cs
 D:\4course\Diploms\Мой\SportShop\obj\Debug\Pages\Auth.baml
 D:\4course\Diploms\Мой\SportShop\obj\Debug\SellerPages\MenuSeller.g.cs
 D:\4course\Diploms\Мой\SportShop\obj\Debug\SellerPages\MenuSeller.baml
+D:\4course\Diploms\Мой\SportShop\obj\Debug\SellerPages\EmptyPageSeller.g.cs
+D:\4course\Diploms\Мой\SportShop\obj\Debug\SellerPages\EmptyPageSeller.baml
+D:\4course\Diploms\Мой\SportShop\obj\Debug\ModalWindows\ExitModal.g.cs
+D:\4course\Diploms\Мой\SportShop\obj\Debug\ModalWindows\ExitModal.baml
+D:\4course\Diploms\Мой\SportShop\obj\Debug\AdminPages\MenuAdmin.g.cs
+D:\4course\Diploms\Мой\SportShop\obj\Debug\AdminPages\MenuAdmin.baml

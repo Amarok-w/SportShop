@@ -48,10 +48,9 @@
                 <Border BorderThickness="0"
                         HorizontalAlignment="Center"
                         CornerRadius="3"
-                        
                         BorderBrush="#78FECF">
 
-                    <Button Template="{DynamicResource myButton}" 
+                    <Button Template="{DynamicResource myButton}"
                             Name="btnIn"
                             Click="btnIn_Click"
                             Content="Вход"

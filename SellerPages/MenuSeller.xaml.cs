@@ -12,6 +12,8 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using SportShop.ModalWindows;
+using SportShop.Classes;
 
 namespace SportShop.SellerPages
 {
@@ -23,6 +25,15 @@ namespace SportShop.SellerPages
         public MenuSeller()
         {
             InitializeComponent();
+            Classes.FrameApp.sellerFrame = frmSeller;
+            FrameApp.sellerFrame.Navigate(new EmptyPageSeller());
+        }
+
+        private void btnExit_Click(object sender, RoutedEventArgs e)
+        {
+            ExitModal modal = new ExitModal();
+            modal.ShowDialog();
+
         }
     }
 }

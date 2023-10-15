@@ -13,25 +13,16 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 
-namespace SportShop.Pages
+namespace SportShop.SellerPages
 {
     /// <summary>
-    /// Логика взаимодействия для Auth.xaml
+    /// Логика взаимодействия для EmptyPageSeller.xaml
     /// </summary>
-    public partial class Auth : Page
+    public partial class EmptyPageSeller : Page
     {
-        public Auth()
+        public EmptyPageSeller()
         {
             InitializeComponent();
-        }
-
-        private void btnIn_Click(object sender, RoutedEventArgs e)
-        {
-            string login = txbLogin.Text;
-            string password = psbPassword.Password;
-
-            NavigationService.Navigate(new SellerPages.MenuSeller());
-            //NavigationService.Navigate(new AdminPages.MenuAdmin());
         }
     }
 }

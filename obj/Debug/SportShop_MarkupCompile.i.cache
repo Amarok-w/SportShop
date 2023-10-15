@@ -10,11 +10,11 @@ none
 false
 DEBUG;TRACE
 D:\4course\Diploms\Мой\SportShop\App.xaml
-3-1993506426
+6-323108718
 
-9-1819630064
+12-212672012
 13-1310406943
-MainWindow.xaml;Pages\Auth.xaml;SellerPages\MenuSeller.xaml;
+AdminPages\MenuAdmin.xaml;MainWindow.xaml;ModalWindows\ExitModal.xaml;Pages\Auth.xaml;SellerPages\EmptyPageSeller.xaml;SellerPages\MenuSeller.xaml;
 
 True
 

@@ -55,9 +55,22 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="AdminPages\MenuAdmin.xaml.cs">
+      <DependentUpon>MenuAdmin.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="ModalWindows\ExitModal.xaml.cs">
+      <DependentUpon>ExitModal.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="SellerPages\EmptyPageSeller.xaml.cs">
+      <DependentUpon>EmptyPageSeller.xaml</DependentUpon>
+    </Compile>
     <Compile Include="SellerPages\MenuSeller.xaml.cs">
       <DependentUpon>MenuSeller.xaml</DependentUpon>
     </Compile>
+    <Page Include="AdminPages\MenuAdmin.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
@@ -71,7 +84,15 @@
       <DependentUpon>MainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
+    <Page Include="ModalWindows\ExitModal.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="Pages\Auth.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="SellerPages\EmptyPageSeller.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -112,6 +133,11 @@
   <ItemGroup>
     <Resource Include="Images\logo.png" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Resource Include="Images\cart.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\exit.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
