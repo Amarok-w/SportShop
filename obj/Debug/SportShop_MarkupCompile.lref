@@ -1,10 +1,17 @@
 ﻿
 FD:\4course\Diploms\Мой\SportShop\App.xaml;;
+FD:\4course\Diploms\Мой\SportShop\AdminPages\CategoryEdit.xaml;;
+FD:\4course\Diploms\Мой\SportShop\AdminPages\CategoryView.xaml;;
+FD:\4course\Diploms\Мой\SportShop\AdminPages\EmptyPageAdmin.xaml;;
 FD:\4course\Diploms\Мой\SportShop\AdminPages\MenuAdmin.xaml;;
 FD:\4course\Diploms\Мой\SportShop\MainWindow.xaml;;
+FD:\4course\Diploms\Мой\SportShop\ModalWindows\DeleteModal.xaml;;
+FD:\4course\Diploms\Мой\SportShop\ModalWindows\ErrorDeleteModal.xaml;;
 FD:\4course\Diploms\Мой\SportShop\ModalWindows\ExitModal.xaml;;
+FD:\4course\Diploms\Мой\SportShop\ModalWindows\SuccessDeleteModal.xaml;;
 FD:\4course\Diploms\Мой\SportShop\Pages\Auth.xaml;;
 FD:\4course\Diploms\Мой\SportShop\SellerPages\EmptyPageSeller.xaml;;
 FD:\4course\Diploms\Мой\SportShop\SellerPages\MenuSeller.xaml;;
-FD:\4course\Diploms\Мой\SportShop\AdminPages\EmptyPageAdmin.xaml;;
+FD:\4course\Diploms\Мой\SportShop\ModalWindows\ErrorFillSaveModal.xaml;;
+FD:\4course\Diploms\Мой\SportShop\ModalWindows\ErrorSaveModal.xaml;;
 

@@ -12,6 +12,7 @@
 
         <Grid Grid.Column="0"
               Name="navPanel"
+              Panel.ZIndex="10"
               Width="50"
               HorizontalAlignment="Left"
               Background="#FFFFFF"

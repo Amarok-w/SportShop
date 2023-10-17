@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="c94c5b64c3e0471e834151bbc108ebe8" Name="Diagram1">
+        <EntityTypeShape EntityType="SportShopModel.Admin" Width="1.5" PointX="7.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SportShopModel.Category" Width="1.5" PointX="0.75" PointY="9.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="SportShopModel.Client" Width="1.5" PointX="0.75" PointY="1" IsExpanded="true" />
+        <EntityTypeShape EntityType="SportShopModel.Delivery" Width="1.5" PointX="5" PointY="5" IsExpanded="true" />
+        <EntityTypeShape EntityType="SportShopModel.DeliveryComposition" Width="1.5" PointX="7.25" PointY="7.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="SportShopModel.Product" Width="1.5" PointX="3" PointY="8.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SportShopModel.Provider" Width="1.5" PointX="2.75" PointY="5.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="SportShopModel.Sale" Width="1.5" PointX="3" PointY="1" IsExpanded="true" />
+        <EntityTypeShape EntityType="SportShopModel.SaleComposition" Width="1.5" PointX="5.25" PointY="1" IsExpanded="true" />
+        <EntityTypeShape EntityType="SportShopModel.Seller" Width="1.5" PointX="0.75" PointY="5" IsExpanded="true" />
+        <EntityTypeShape EntityType="SportShopModel.sysdiagrams" Width="1.5" PointX="7.75" PointY="3.75" IsExpanded="true" />
+        <AssociationConnector Association="SportShopModel.FK_Product_Category" ManuallyRouted="false" />
+        <AssociationConnector Association="SportShopModel.FK_Sale_Client" ManuallyRouted="false" />
+        <AssociationConnector Association="SportShopModel.FK_Delivery_Provider" ManuallyRouted="false" />
+        <AssociationConnector Association="SportShopModel.FK_DeliveryComposition_Delivery" ManuallyRouted="false" />
+        <AssociationConnector Association="SportShopModel.FK_DeliveryComposition_Product" ManuallyRouted="false" />
+        <AssociationConnector Association="SportShopModel.FK_SaleComposition_Product" ManuallyRouted="false" />
+        <AssociationConnector Association="SportShopModel.FK_Sale_Seller" ManuallyRouted="false" />
+        <AssociationConnector Association="SportShopModel.FK_SaleComposition_Sale" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

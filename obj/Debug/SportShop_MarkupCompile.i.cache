@@ -10,11 +10,11 @@ none
 false
 DEBUG;TRACE
 D:\4course\Diploms\Мой\SportShop\App.xaml
-7-967916438
-
-131657398492
-13-1310406943
-AdminPages\EmptyPageAdmin.xaml;AdminPages\MenuAdmin.xaml;MainWindow.xaml;ModalWindows\ExitModal.xaml;Pages\Auth.xaml;SellerPages\EmptyPageSeller.xaml;SellerPages\MenuSeller.xaml;
+14235319135
+2-1957146511
+36-1599536257
+192080892032
+AdminPages\CategoryEdit.xaml;AdminPages\CategoryView.xaml;AdminPages\EmptyPageAdmin.xaml;AdminPages\MenuAdmin.xaml;MainWindow.xaml;ModalWindows\DeleteModal.xaml;ModalWindows\ErrorDeleteModal.xaml;ModalWindows\ErrorFillSaveModal.xaml;ModalWindows\ErrorSaveModal.xaml;ModalWindows\ExitModal.xaml;ModalWindows\SuccessDeleteModal.xaml;Pages\Auth.xaml;SellerPages\EmptyPageSeller.xaml;SellerPages\MenuSeller.xaml;
 
 True
 

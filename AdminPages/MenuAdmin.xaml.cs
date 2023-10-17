@@ -5,10 +5,12 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows;
 using System.Windows.Controls;
+using System.Windows.Controls.Primitives;
 using System.Windows.Data;
 using System.Windows.Documents;
 using System.Windows.Input;
 using System.Windows.Media;
+using System.Windows.Media.Animation;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
@@ -38,27 +40,28 @@ namespace SportShop.AdminPages
 
         private void btnCategories_Click(object sender, RoutedEventArgs e)
         {
-
+            btnToggle.IsChecked = btnToggle.IsChecked == true ? false : btnToggle.IsChecked;
+            frmAdmin.Navigate(new CategoryView());
         }
 
         private void btnProducts_Click(object sender, RoutedEventArgs e)
         {
-
+            btnToggle.IsChecked = btnToggle.IsChecked == true ? false : btnToggle.IsChecked;
         }
 
         private void btnProviders_Click(object sender, RoutedEventArgs e)
         {
-
+            btnToggle.IsChecked = btnToggle.IsChecked == true ? false : btnToggle.IsChecked;
         }
 
         private void btnDelivery_Click(object sender, RoutedEventArgs e)
         {
-
+            btnToggle.IsChecked = btnToggle.IsChecked == true ? false : btnToggle.IsChecked;
         }
 
         private void btnSellers_Click(object sender, RoutedEventArgs e)
         {
-
+            btnToggle.IsChecked = btnToggle.IsChecked == true ? false : btnToggle.IsChecked;
         }
     }
 }
