@@ -47,21 +47,25 @@ namespace SportShop.AdminPages
         private void btnProducts_Click(object sender, RoutedEventArgs e)
         {
             btnToggle.IsChecked = btnToggle.IsChecked == true ? false : btnToggle.IsChecked;
+            frmAdmin.Navigate(new ProductView());
         }
 
         private void btnProviders_Click(object sender, RoutedEventArgs e)
         {
             btnToggle.IsChecked = btnToggle.IsChecked == true ? false : btnToggle.IsChecked;
+            frmAdmin.Navigate(new ProviderView());
         }
 
         private void btnDelivery_Click(object sender, RoutedEventArgs e)
         {
             btnToggle.IsChecked = btnToggle.IsChecked == true ? false : btnToggle.IsChecked;
+            frmAdmin.Navigate(new DeliveryView());
         }
 
         private void btnSellers_Click(object sender, RoutedEventArgs e)
         {
             btnToggle.IsChecked = btnToggle.IsChecked == true ? false : btnToggle.IsChecked;
+            frmAdmin.Navigate(new SellerView());
         }
     }
 }

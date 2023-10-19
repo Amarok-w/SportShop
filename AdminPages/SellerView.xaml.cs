@@ -18,27 +18,27 @@ using System.Windows.Shapes;
 namespace SportShop.AdminPages
 {
     /// <summary>
-    /// Логика взаимодействия для CatagoryView.xaml
+    /// Логика взаимодействия для SellerView.xaml
     /// </summary>
-    public partial class CategoryView : Page
+    public partial class SellerView : Page
     {
         public static SportShopEntities contextDB;
-        public CategoryView()
+        public SellerView()
         {
             InitializeComponent();
             contextDB = new SportShopEntities();
 
-            gridCategories.ItemsSource = contextDB.Category.ToList();
+            gridSellers.ItemsSource = contextDB.Seller.ToList();
         }
 
         private void btnAdd_Click(object sender, RoutedEventArgs e)
         {
-            FrameApp.AdminFrame.Navigate(new CategoryEdit(null));
+            FrameApp.AdminFrame.Navigate(new SellerEdit(null));
         }
 
         private void btnDelete_Click(object sender, RoutedEventArgs e)
         {
-            var delitingItems = gridCategories.SelectedItems.Cast<Category>().ToList();
+            var delitingItems = gridSellers.SelectedItems.Cast<Seller>().ToList();
 
             DeleteModal modal = new DeleteModal(delitingItems.Count());
             modal.ShowDialog();
@@ -47,13 +47,13 @@ namespace SportShop.AdminPages
             {
                 try
                 {
-                    contextDB.Category.RemoveRange(delitingItems);
+                    contextDB.Seller.RemoveRange(delitingItems);
                     contextDB.SaveChanges();
 
                     SuccessDeleteModal successModal = new SuccessDeleteModal();
                     successModal.ShowDialog();
 
-                    FrameApp.AdminFrame.Navigate(new AdminPages.CategoryView());
+                    FrameApp.AdminFrame.Navigate(new AdminPages.SellerView());
                 }
                 catch
                 {
@@ -65,7 +65,7 @@ namespace SportShop.AdminPages
 
         private void btnEdit_Click(object sender, RoutedEventArgs e)
         {
-            FrameApp.AdminFrame.Navigate(new CategoryEdit((sender as Button).DataContext as Category));
+            FrameApp.AdminFrame.Navigate(new SellerEdit((sender as Button).DataContext as Seller));
         }
     }
 }
