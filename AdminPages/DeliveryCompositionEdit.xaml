@@ -48,6 +48,7 @@
                 <ComboBox Template="{DynamicResource ComboBoxTemplate1}" ItemContainerStyle="{DynamicResource ComboBoxItemContainerStyle1}" 
                           Name="cmbDelivery"
                           Width="300"
+                          IsSynchronizedWithCurrentItem="True"
                           DisplayMemberPath="ID"
                           SelectedItem="{Binding Delivery}"
                           SelectedValuePath="ID"
@@ -141,7 +142,8 @@
                 <ColumnDefinition></ColumnDefinition>
             </Grid.ColumnDefinitions>
 
-            <TextBlock Name="txbText"></TextBlock>
+            <!--textbox-->
+            <TextBlock Name="txbText" FontSize="14"></TextBlock>
             
             <Border Grid.Column="1"
                     HorizontalAlignment="Left"

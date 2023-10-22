@@ -23,7 +23,6 @@ namespace SportShop.AdminPages
     public partial class DeliveryView : Page
     {
         public static SportShopEntities contextDB;
-        public Delivery selectedDeliveryForBox;
         public DeliveryView()
         {
             InitializeComponent();
@@ -39,7 +38,7 @@ namespace SportShop.AdminPages
 
         private void btnAddComposition_Click(object sender, RoutedEventArgs e)
         {
-            FrameApp.AdminFrame.Navigate(new DeliveryCompositionEdit(null, selectedDeliveryForBox));
+            FrameApp.AdminFrame.Navigate(new DeliveryCompositionEdit(null, gridDeliveries.SelectedItem as Delivery));
         }
 
         private void btnDelete_Click(object sender, RoutedEventArgs e)
@@ -105,7 +104,7 @@ namespace SportShop.AdminPages
 
         private void btnEditComposition_Click(object sender, RoutedEventArgs e)
         {
-            FrameApp.AdminFrame.Navigate(new DeliveryCompositionEdit(((sender as Button).DataContext as DeliveryComposition), selectedDeliveryForBox));
+            FrameApp.AdminFrame.Navigate(new DeliveryCompositionEdit(((sender as Button).DataContext as DeliveryComposition), gridDeliveries.SelectedItem as Delivery));
         }
 
         private void gridDeliveries_PreviewMouseLeftButtonDown(object sender, MouseButtonEventArgs e)
@@ -116,7 +115,6 @@ namespace SportShop.AdminPages
             if (selectedDelivery != null)
             {
                 gridComposition.ItemsSource = contextDB.DeliveryComposition.Where(item => item.ID_Delivery == selectedDelivery.ID).ToList();
-                selectedDeliveryForBox = selectedDelivery;
             }
         }
     }
