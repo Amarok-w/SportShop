@@ -35,5 +35,20 @@ namespace SportShop.SellerPages
             modal.ShowDialog();
 
         }
+
+        private void btnClients_Click(object sender, RoutedEventArgs e)
+        {
+            FrameApp.sellerFrame.Navigate(new ClientView());
+        }
+
+        private void btnProducts_Click(object sender, RoutedEventArgs e)
+        {
+            FrameApp.sellerFrame.Navigate(new ProductList());
+        }
+
+        private void btnCart_Click(object sender, RoutedEventArgs e)
+        {
+            FrameApp.sellerFrame.Navigate(new Cart());
+        }
     }
 }

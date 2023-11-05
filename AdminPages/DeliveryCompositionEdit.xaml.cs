@@ -40,9 +40,9 @@ namespace SportShop.AdminPages
 
             if (selectedDelivery != null)
             {
-                cmbDelivery.SelectedValue = selectedDelivery.ID;
                 currentComposition.ID_Delivery = selectedDelivery.ID;
                 cmbDelivery.UpdateLayout();
+                cmbDelivery.SelectedItem = selectedDelivery;
             }
 
         }
@@ -93,5 +93,6 @@ namespace SportShop.AdminPages
                 errorSaveModal.ShowDialog();
             }
         }
+
     }
 }

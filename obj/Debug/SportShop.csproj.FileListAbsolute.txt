@@ -66,3 +66,16 @@ D:\4course\Diploms\Мой\SportShop\obj\Debug\AdminPages\DeliveryCompositionEdit
 D:\4course\Diploms\Мой\SportShop\obj\Debug\AdminPages\DeliveryEdit.g.cs
 D:\4course\Diploms\Мой\SportShop\obj\Debug\AdminPages\DeliveryCompositionEdit.baml
 D:\4course\Diploms\Мой\SportShop\obj\Debug\AdminPages\DeliveryEdit.baml
+D:\4course\Diploms\Мой\SportShop\obj\Debug\SellerPages\ClientView.g.cs
+D:\4course\Diploms\Мой\SportShop\obj\Debug\SellerPages\ClientView.baml
+D:\4course\Diploms\Мой\SportShop\obj\Debug\SellerPages\ClientEdit.g.cs
+D:\4course\Diploms\Мой\SportShop\obj\Debug\SellerPages\ClientEdit.baml
+D:\4course\Diploms\Мой\SportShop\obj\Debug\SellerPages\ProductList.g.cs
+D:\4course\Diploms\Мой\SportShop\obj\Debug\SellerPages\ProductList.baml
+D:\4course\Diploms\Мой\SportShop\obj\Debug\ModalWindows\ErrorAmount.g.cs
+D:\4course\Diploms\Мой\SportShop\obj\Debug\SellerPages\Cart.g.cs
+D:\4course\Diploms\Мой\SportShop\obj\Debug\ModalWindows\ErrorAmount.baml
+D:\4course\Diploms\Мой\SportShop\obj\Debug\SellerPages\Cart.baml
+D:\4course\Diploms\Мой\SportShop\obj\Debug\ModalWindows\ErrorAuth.g.cs
+D:\4course\Diploms\Мой\SportShop\obj\Debug\ModalWindows\ErrorAuth.baml
+D:\4course\Diploms\Мой\SportShop\bin\Debug\ru\EntityFramework.SqlServer.resources.dll

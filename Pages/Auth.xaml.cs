@@ -1,4 +1,5 @@
-﻿using System;
+﻿using SportShop.ModalWindows;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -20,9 +21,13 @@ namespace SportShop.Pages
     /// </summary>
     public partial class Auth : Page
     {
+        public static SportShopEntities contextDB;
+        public static int SellerID;
         public Auth()
         {
             InitializeComponent();
+
+            contextDB = new SportShopEntities();
         }
 
         private void btnIn_Click(object sender, RoutedEventArgs e)
@@ -30,13 +35,23 @@ namespace SportShop.Pages
             string login = txbLogin.Text;
             string password = psbPassword.Password;
 
-            if (login == "sel")
+            if (contextDB.Admin.FirstOrDefault(item => item.Login == login && item.Password == password) != null)
+            {
+                NavigationService.Navigate(new AdminPages.MenuAdmin());
+            }
+            else if (contextDB.Seller.FirstOrDefault(item => item.Login == login && item.Password == password) != null)
             {
                 NavigationService.Navigate(new SellerPages.MenuSeller());
-                return;
+                SellerID = contextDB.Seller.FirstOrDefault(item => item.Login == login && item.Password == password).ID;
             }
-            NavigationService.Navigate(new AdminPages.MenuAdmin());
+            else
+            {
+                ErrorAuth errorAuth = new ErrorAuth();
+                errorAuth.ShowDialog();
+            }
+            
 
+            SellerPages.ProductList.FirstTime = true;
         }
     }
 }

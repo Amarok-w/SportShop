@@ -33,5 +33,6 @@ namespace SportShop
         public virtual ICollection<DeliveryComposition> DeliveryComposition { get; set; }
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<SaleComposition> SaleComposition { get; set; }
+        public bool NotInCart { get; internal set; }
     }
 }

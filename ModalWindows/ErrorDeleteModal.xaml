@@ -36,7 +36,6 @@
                     </TextBlock>
                 </Button>
             </Border>
-
         </Grid>
     </Grid>
 </Window>

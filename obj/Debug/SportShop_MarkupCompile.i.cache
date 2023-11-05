@@ -10,11 +10,11 @@ none
 false
 DEBUG;TRACE
 D:\4course\Diploms\Мой\SportShop\App.xaml
-23-1619425324
+29873779238
 2-1957146511
-45-1922740982
-192080892032
-AdminPages\CategoryEdit.xaml;AdminPages\CategoryView.xaml;AdminPages\DeliveryCompositionEdit.xaml;AdminPages\DeliveryEdit.xaml;AdminPages\DeliveryView.xaml;AdminPages\EmptyPageAdmin.xaml;AdminPages\MenuAdmin.xaml;AdminPages\ProductEdit.xaml;AdminPages\ProductView.xaml;AdminPages\ProviderEdit.xaml;AdminPages\ProviderView.xaml;AdminPages\SellerEdit.xaml;AdminPages\SellerView.xaml;MainWindow.xaml;ModalWindows\DeleteModal.xaml;ModalWindows\ErrorDeleteModal.xaml;ModalWindows\ErrorFillSaveModal.xaml;ModalWindows\ErrorSaveModal.xaml;ModalWindows\ExitModal.xaml;ModalWindows\SuccessDeleteModal.xaml;Pages\Auth.xaml;SellerPages\EmptyPageSeller.xaml;SellerPages\MenuSeller.xaml;
+52794253640
+20722143875
+AdminPages\CategoryEdit.xaml;AdminPages\CategoryView.xaml;AdminPages\DeliveryCompositionEdit.xaml;AdminPages\DeliveryEdit.xaml;AdminPages\DeliveryView.xaml;AdminPages\EmptyPageAdmin.xaml;AdminPages\MenuAdmin.xaml;AdminPages\ProductEdit.xaml;AdminPages\ProductView.xaml;AdminPages\ProviderEdit.xaml;AdminPages\ProviderView.xaml;AdminPages\SellerEdit.xaml;AdminPages\SellerView.xaml;MainWindow.xaml;ModalWindows\DeleteModal.xaml;ModalWindows\ErrorAmount.xaml;ModalWindows\ErrorAuth.xaml;ModalWindows\ErrorDeleteModal.xaml;ModalWindows\ErrorFillSaveModal.xaml;ModalWindows\ErrorSaveModal.xaml;ModalWindows\ExitModal.xaml;ModalWindows\SuccessDeleteModal.xaml;Pages\Auth.xaml;SellerPages\Cart.xaml;SellerPages\ClientEdit.xaml;SellerPages\ClientView.xaml;SellerPages\EmptyPageSeller.xaml;SellerPages\MenuSeller.xaml;SellerPages\ProductList.xaml;
 
 True
 

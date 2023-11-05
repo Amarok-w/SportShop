@@ -45,9 +45,9 @@
 
                 </DataGridTextColumn>
                 <DataGridTextColumn Header="Наименование" CanUserResize="False" Width="200" Binding="{Binding Name}"></DataGridTextColumn>
-                <DataGridTextColumn Header="Категория" CanUserResize="False" Width="200" Binding="{Binding Category.Name}"></DataGridTextColumn>
+                <DataGridTextColumn Header="Категория" CanUserResize="False" Width="230" Binding="{Binding Category.Name}"></DataGridTextColumn>
                 <DataGridTextColumn Header="Фото" CanUserResize="False" Width="180" Binding="{Binding Photo}"></DataGridTextColumn>
-                <DataGridTextColumn Header="Цена" CanUserResize="False" Width="140" Binding="{Binding Price, StringFormat=0.0}"></DataGridTextColumn>
+                <DataGridTextColumn Header="Цена" CanUserResize="False" Width="110" Binding="{Binding Price, StringFormat=0.0}"></DataGridTextColumn>
                 <DataGridTextColumn Header="Кол-во" CanUserResize="False" Width="80" Binding="{Binding Amount}"></DataGridTextColumn>
 
                 <DataGridTemplateColumn Width="35">

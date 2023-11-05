@@ -27,6 +27,7 @@
             <Border BorderThickness="0 0 1 0"
                     BorderBrush="#ffffff">
                 <Button Name="btnClients"
+                        Click="btnClients_Click"
                         Template="{DynamicResource myButton}"
                         Content="Клиенты"
                         BorderThickness="0">
@@ -37,6 +38,7 @@
                     Grid.Column="1"
                     BorderBrush="#ffffff">
                 <Button Name="btnProducts"
+                        Click="btnProducts_Click"
                         Template="{DynamicResource myButton}"
                         Content="Товары"
                         BorderThickness="0">
@@ -46,6 +48,7 @@
             <Button Name="btnCart"
                     Template="{DynamicResource myButton}"
                     BorderThickness="0"
+                    Click="btnCart_Click"
                     Grid.Column="3">
                 <Image Source="../Images/cart.png"
                        Height="35">
