@@ -191,7 +191,8 @@
 
         </Grid>
 
-        <Grid Grid.Row="1" Background="#fff">
+        <Grid Grid.Row="1"
+              Background="#fff">
             <Grid.ColumnDefinitions>
                 <ColumnDefinition></ColumnDefinition>
                 <ColumnDefinition></ColumnDefinition>
@@ -216,9 +217,9 @@
 
                 <Border.Effect>
                     <DropShadowEffect Color="#333333"
-                                  ShadowDepth="2"
-                                  Opacity="0.25"
-                                  BlurRadius="3">
+                                      ShadowDepth="2"
+                                      Opacity="0.25"
+                                      BlurRadius="3">
                     </DropShadowEffect>
                 </Border.Effect>
             </Border>
@@ -243,9 +244,9 @@
 
                 <Border.Effect>
                     <DropShadowEffect Color="#333333"
-                                  ShadowDepth="2"
-                                  Opacity="0.25"
-                                  BlurRadius="3">
+                                      ShadowDepth="2"
+                                      Opacity="0.25"
+                                      BlurRadius="3">
                     </DropShadowEffect>
                 </Border.Effect>
             </Border>

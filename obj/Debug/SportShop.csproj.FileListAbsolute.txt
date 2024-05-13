@@ -2,7 +2,6 @@ D:\4course\Diploms\Мой\SportShop\bin\Debug\SportShop.exe.config
 D:\4course\Diploms\Мой\SportShop\bin\Debug\SportShop.exe
 D:\4course\Diploms\Мой\SportShop\bin\Debug\SportShop.pdb
 D:\4course\Diploms\Мой\SportShop\obj\Debug\SportShop.csproj.AssemblyReference.cache
-D:\4course\Diploms\Мой\SportShop\obj\Debug\SportShop.csproj.SuggestedBindingRedirects.cache
 D:\4course\Diploms\Мой\SportShop\obj\Debug\MainWindow.g.cs
 D:\4course\Diploms\Мой\SportShop\obj\Debug\App.g.cs
 D:\4course\Diploms\Мой\SportShop\obj\Debug\SportShop_MarkupCompile.cache
@@ -33,7 +32,6 @@ D:\4course\Diploms\Мой\SportShop\bin\Debug\EntityFramework.xml
 D:\4course\Diploms\Мой\SportShop\bin\Debug\EntityFramework.SqlServer.xml
 D:\4course\Diploms\Мой\SportShop\bin\Debug\ru\EntityFramework.resources.dll
 D:\4course\Diploms\Мой\SportShop\obj\Debug\SportShop_Content.g.cs
-D:\4course\Diploms\Мой\SportShop\obj\Debug\SportShop.csproj.CopyComplete
 D:\4course\Diploms\Мой\SportShop\obj\Debug\AdminPages\CategoryView.g.cs
 D:\4course\Diploms\Мой\SportShop\obj\Debug\ModalWindows\DeleteModal.g.cs
 D:\4course\Diploms\Мой\SportShop\obj\Debug\AdminPages\CategoryView.baml
@@ -79,3 +77,4 @@ D:\4course\Diploms\Мой\SportShop\obj\Debug\SellerPages\Cart.baml
 D:\4course\Diploms\Мой\SportShop\obj\Debug\ModalWindows\ErrorAuth.g.cs
 D:\4course\Diploms\Мой\SportShop\obj\Debug\ModalWindows\ErrorAuth.baml
 D:\4course\Diploms\Мой\SportShop\bin\Debug\ru\EntityFramework.SqlServer.resources.dll
+D:\4course\Diploms\Мой\SportShop\obj\Debug\SportShop.csproj.Up2Date

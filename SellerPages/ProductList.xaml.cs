@@ -23,7 +23,6 @@ namespace SportShop.SellerPages
     {
         public static SportShopEntities contextDB = new SportShopEntities();
         public static List<Product> products;
-            // = contextDB.Product.ToList();
         public static Boolean FirstTime = true;
 
         public static List<Product> productsInCart = new List<Product>();
